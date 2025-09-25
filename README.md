@@ -23,7 +23,7 @@ const NamgungGeonwoo = {
 
 ### 🥇 Award Winner
 **제7회 k-DigitalTraining Hackathon**
-- **🏆 고용노동부장관상 수상** (최고상)
+- **🏆 고용노동부장관상 수상**
 - **💡 프로젝트**: "고향으로 ON"
 - **🎯 임팩트**: 중장년층 고향 정착 지원
 - **🛠️ 기술**: RAG, React Native, FastAPI
@@ -49,7 +49,7 @@ const NamgungGeonwoo = {
 *🥇 제7회 k-DigitalTraining Hackathon 고용노동부장관상 수상작*
 - **기술**: React Native, TypeScript, FastAPI, OpenAI GPT, RAG, ChromaDB, MySQL
 - **핵심 성과**:
-  - 전국 해커톤 대회에서 **고용노동부장관상** 수상 (최고상)
+  - 전국 해커톤 대회에서 **고용노동부장관상** 수상
   - 중장년층 디지털 접근성을 고려한 **음성 기반 UI/UX** 구현
   - **RAG 기술**로 지역별 맞춤형 정보 제공 시스템 구축
   - **게이미피케이션** 요소로 지역사회 적응 동기 부여
