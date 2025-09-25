@@ -1,28 +1,21 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=300&section=header&text=Nam%20Gung%20Geon%20Woo&fontSize=70&fontColor=fff&animation=twinkling&fontAlignY=40&desc=AI%20Developer%20%26%20Full%20Stack%20Engineer&descAlignY=65&descAlign=50)
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=300&section=header&text=Namgung%20Geonwoo&fontSize=70&fontColor=fff&animation=twinkling&fontAlignY=40&desc=AI%20Developer%20and%20Backend%20Engineer&descAlignY=65&descAlign=50)
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=600&lines=🏆+Award-winning+AI+Developer;🤖+RAG+%26+LLM+Specialist;🚀+Backend+Engineer;💡+Problem+Solver+%26+Innovator;🎯+Building+AI+for+Social+Impact)](https://git.io/typing-svg)
+
+</div>
 
 ```javascript
-const namGungGeonWoo = {
+const NamgungGeonwoo = {
     location: "Seoul, Korea 🇰🇷",
-    currentFocus: ["RAG Systems", "Multi-Agent AI", "Full-Stack Development"],
+    currentFocus: ["RAG Systems", "Multi-Agent AI", "Backend Development"],
     achievements: ["🥇 Ministry Award Winner", "🤖 AI Specialist", "👨‍💻 Team Leader"],
-    philosophy: "Building the future with AI • Solving real-world problems • Always learning",
-    funFact: "From hackathon winner to AI innovator in less than a year! 🚀"
+    philosophy: "Building the future with AI • Solving real-world problems • Always learning"
 };
 ```
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=600&lines=🏆+Award-winning+AI+Developer;🤖+RAG+%26+LLM+Specialist;🚀+Full+Stack+Engineer;💡+Problem+Solver+%26+Innovator;🎯+Building+AI+for+Social+Impact)](https://git.io/typing-svg)
-
-</div>
-
-<div align="center">
-
 ## 🏆 주요 성과
-
-<img src="https://github-profile-trophy.vercel.app/?username=NGGW519&theme=radical&no-frame=false&no-bg=false&margin-w=4" alt="GitHub Trophies"/>
-
-</div>
 
 <table>
 <tr>
@@ -154,7 +147,6 @@ const namGungGeonWoo = {
 
 ### 🎨 Frontend
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Electron](https://img.shields.io/badge/Electron-2B2E3A?style=for-the-badge&logo=electron&logoColor=9FEAF9)
 
@@ -169,27 +161,38 @@ const namGungGeonWoo = {
 </tr>
 </table>
 
-<div align="center">
-
 ### 🎯 Specialized Skills
 
-```mermaid
-graph TD
-    A[🤖 AI Development] --> B[RAG Systems]
-    A --> C[Multi-Agent AI]
-    A --> D[LLM Integration]
-    E[📱 Full Stack] --> F[React/React Native]
-    E --> G[FastAPI/Django]
-    E --> H[Database Design]
-    I[🔬 Data Science] --> J[ML Modeling]
-    I --> K[Performance Optimization]
-    I --> L[Feature Engineering]
-    M[👥 Leadership] --> N[Team Management]
-    M --> O[Project Planning]
-    M --> P[Technical Mentoring]
-```
+<table>
+<tr>
+<td width="50%">
 
-</div>
+**🤖 AI Development**
+- RAG Systems
+- Multi-Agent AI
+- LLM Integration
+
+**💻 Backend Development**
+- FastAPI/Django
+- Database Design
+- API Architecture
+
+</td>
+<td width="50%">
+
+**🔬 Data Science**
+- ML Modeling
+- Performance Optimization
+- Feature Engineering
+
+**👥 Leadership**
+- Team Management
+- Project Planning
+- Technical Mentoring
+
+</td>
+</tr>
+</table>
 
 <div align="center">
 
@@ -225,8 +228,8 @@ graph TD
 </tr>
 </table>
 
-### 📈 Contribution Snake
-![Snake animation](https://github.com/NGGW519/NGGW519/blob/output/github-contribution-grid-snake.svg)
+### 📈 Contribution Activity
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=NGGW519&theme=github-compact&hide_border=true&bg_color=0D1117&color=79fe96&line=00d4aa&point=ffffff)
 
 </div>
 
@@ -234,12 +237,13 @@ graph TD
 
 - 🤖 **RAG & LLM**: 검색 증강 생성 및 대화형 AI 시스템 구축
 - 🏗️ **AI 워크플로우**: LangGraph를 활용한 멀티 에이전트 시스템
-- 📱 **풀스택 개발**: React Native부터 FastAPI까지
+- 💻 **백엔드 개발**: FastAPI, Django 기반 API 설계 및 구현
 - 📊 **데이터 사이언스**: 머신러닝 모델링 및 성능 최적화
 
 ## 🔭 현재 관심사
 
 - 🧠 대화형 AI와 RAG 시스템 고도화
+- 🎨 멀티모달 AI (텍스트, 이미지, 음성 통합)
 - 🎮 게이미피케이션 기반 사용자 경험 설계
 - 🗣️ 음성 인터페이스 및 접근성 향상
 - 🌐 실시간 데이터 처리 및 API 통합
@@ -249,28 +253,9 @@ graph TD
 ## 📫 Let's Connect!
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NGGW519)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your-email@gmail.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:srrd1357@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
 
-### 💬 Fun Facts About Me
-
-```typescript
-interface Developer {
-    name: string;
-    favoriteQuote: string;
-    currentlyListening: string;
-    coffeeCupsPerDay: number;
-    dreamProject: string;
-}
-
-const me: Developer = {
-    name: "Nam Gung Geon Woo",
-    favoriteQuote: "Code is poetry written in logic 🎭",
-    currentlyListening: "Lo-fi hip hop while coding 🎵",
-    coffeeCupsPerDay: 4,
-    dreamProject: "AI that helps bridge the digital divide 🌉"
-};
-```
 
 ### 🎮 When I'm Not Coding
 
