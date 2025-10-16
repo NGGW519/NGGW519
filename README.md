@@ -99,7 +99,6 @@ const NamgungGeonwoo = {
 * 기술: Python, XGBoost, SMOTE, Scikit-learn, Pandas, NumPy
 * 성과:
 
-  * **F1 Score 11.4% 향상** (0.4624 → 0.5153)
   * 클래스 불균형 해결 (SMOTE 적용)
   * 주요 인자 식별: 성별, 연령, 정신건강, 약물남용
 * 팀명: "도망가지마!!!!"
