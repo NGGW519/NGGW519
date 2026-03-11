@@ -32,11 +32,11 @@ ROS 2 기반 다중 로봇 Fleet Management System을 설계하고 구현하면�
 
 # Projects
 
-### 1. Robotics - Kitchmatics
+### 1. Robotics - [Kitchmatics](https://github.com/addinedu-roscamp-4th/roscamp-repo-1)
 
 > ROS 2 기반 자율주행 서빙로봇 3대 + 로봇팔 2대 협업 스마트 키친 시스템
 
-[Repository](https://github.com/addinedu-roscamp-4th/roscamp-repo-1) · ROS 2 Jazzy, Nav2, Python, PostgreSQL, Domain Bridge, TCP/IP, PyQt
+- ROS 2 Jazzy, Nav2, Python, PostgreSQL, Domain Bridge, TCP/IP, PyQt
 
 ```
 Main PC (Domain 25) ─── FMS Node, Sandwich Coordinator, Domain Bridge, DB
@@ -74,19 +74,19 @@ Main PC (Domain 25) ─── FMS Node, Sandwich Coordinator, Domain Bridge, DB
 
 ### 2. AI & ML
 
-**1. [고향으로 ON](https://github.com/NGGW519/7th-kDT-HACKATHON)** — 고용노동부장관상 수상작
+**[고향으로 ON](https://github.com/NGGW519/7th-kDT-HACKATHON)** — 고용노동부장관상 수상작
 
 RAG 기반 중장년층 고향 정착 지원 플랫폼. 음성 UI/UX, 지역별 맞춤 정보 제공.
 - 기술: React Native, TypeScript, FastAPI, OpenAI GPT, RAG, ChromaDB, MySQL
 - 역할: 팀장, AI 시스템 설계 및 구현
 
-**2. [CLIKCA](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-FINAL-1TEAM)** — AI 업무 파트너
+**[CLIKCA](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-FINAL-1TEAM)** — AI 업무 파트너
 
 멀티 에이전트 기반 업무 자동화 시스템. 하이브리드 검색(키워드+벡터), LangGraph 워크플로우 라우팅.
 - 기술: Electron, React, FastAPI, LangGraph, OpenAI, ChromaDB, AWS S3
 - 역할: AI 워크플로우 아키텍처 설계 및 LangGraph 구현
 
-**3. [의학 논문 팩트체킹 챗봇](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-3rd-1TEAM)**
+**[의학 논문 팩트체킹 챗봇](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-3rd-1TEAM)**
 
 3개 의학 DB(Europe PMC, PubMed, MedRxiv) 통합 RAG 파이프라인. RAGAS 자동 평가 시스템.
 - 기술: GPT-4.1, ChromaDB, RAG, RAGAS, Streamlit
@@ -96,12 +96,12 @@ RAG 기반 중장년층 고향 정착 지원 플랫폼. 음성 UI/UX, 지역별 
 
 ### 3. Web Services
 
-**4. [지금, 서울](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-4th-1TEAM)** — AI 시정 Q&A
+**[지금, 서울](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-4th-1TEAM)** — AI 시정 Q&A
 
 서울 열린데이터 광장 API 통합, FAQ 자동 응답, 관리자 대시보드. 2일 개발.
 - 기술: Django, LangChain, LangGraph, ChromaDB, MySQL
 
-**5. [DRMC](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-1st-2Team)** — 자동차 리콜 정보 서비스
+**[DRMC](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-1st-2Team)** — 자동차 리콜 정보 서비스
 
 리콜 정보 시각화, 맞춤 추천, 웹 크롤링 자동화. 2일 개발.
 - 기술: Streamlit, MySQL, Selenium, Python
@@ -110,7 +110,7 @@ RAG 기반 중장년층 고향 정착 지원 플랫폼. 음성 UI/UX, 지역별 
 
 ### 4. Data Science
 
-**6. [환자 이탈 예측 모델](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-2nd-7Team)**
+**[환자 이탈 예측 모델](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-2nd-7Team)**
 
 클래스 불균형 해결(SMOTE), F1 Score 11.4% 개선. 주요 이탈 인자 식별.
 - 기술: Python, XGBoost, SMOTE, Scikit-learn
