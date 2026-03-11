@@ -22,10 +22,10 @@ ROS 2 기반 다중 로봇 Fleet Management System을 설계하고 구현하면�
 
 ## Highlights
 
-| | |
+| Robotics | AI |
 |---|---|
-| **제7회 k-DigitalTraining Hackathon** 고용노동부장관상 수상 | 7개 프로젝트 완료 (AI/ML 6 + Robotics 1) |
-| F1 Score 11.4% 개선 (환자 이탈 예측) | 155+ 테스트 케이스 작성 (FMS) |
+| 자율주행 서빙로봇 3대 + 로봇팔 2대를 통합 관제하는 **Fleet Management System** 설계 및 구현 | RAG/LLM 기반 프로젝트로 **제7회 k-DigitalTraining Hackathon 고용노동부장관상** 수상 |
+| Task Scheduling, 충돌 회피, 경로 계획, 장애 복구까지 FMS 전 모듈 단독 개발 | OpenAI GPT, LangGraph, ChromaDB 등을 활용한 6개 AI/ML 프로젝트 완료 |
 
 ---
 
