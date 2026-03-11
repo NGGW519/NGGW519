@@ -30,9 +30,9 @@ ROS 2 기반 다중 로봇 Fleet Management System을 설계하고 구현하면�
 
 ---
 
-## Projects
+# Projects
 
-### Kitchmatics - Smart Kitchen Fleet Management System
+### 1. Robotics - Kitchmatics
 
 > ROS 2 기반 자율주행 서빙로봇 3대 + 로봇팔 2대 협업 스마트 키친 시스템
 
@@ -72,7 +72,7 @@ Main PC (Domain 25) ─── FMS Node, Sandwich Coordinator, Domain Bridge, DB
 
 ---
 
-### AI & ML
+### 2. AI & ML
 
 **1. [고향으로 ON](https://github.com/NGGW519/7th-kDT-HACKATHON)** — 고용노동부장관상 수상작
 
@@ -94,7 +94,7 @@ RAG 기반 중장년층 고향 정착 지원 플랫폼. 음성 UI/UX, 지역별 
 
 ---
 
-### Web Services
+### 3. Web Services
 
 **4. [지금, 서울](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-4th-1TEAM)** — AI 시정 Q&A
 
@@ -108,7 +108,7 @@ RAG 기반 중장년층 고향 정착 지원 플랫폼. 음성 UI/UX, 지역별 
 
 ---
 
-### Data Science
+### 4. Data Science
 
 **6. [환자 이탈 예측 모델](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-2nd-7Team)**
 
