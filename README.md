@@ -51,7 +51,7 @@ Main PC (Domain 25) ─── FMS Node, Sandwich Coordinator, Domain Bridge, DB
 | 구분 | 내용 |
 |---|---|
 | **Project Manager** | 6인 팀 리드, 시스템 아키텍처 설계, 모듈 간 인터페이스 정의, 스프린트 운영 |
-| **FMS 설계 및 구현** | 주문~서빙~복귀 전 과정을 관제하는 Fleet Management System 단독 설계/구현 |
+| **FMS 설계 및 구현** | 주문-서빙-복귀 전 과정을 관제하는 Fleet Management System 단독 설계/구현 |
 | **GUI 개발** | 운영자용 실시간 모니터링 대시보드, 주문 접수 및 수동 제어 인터페이스 (TCP 기반) |
 
 #### FMS 상세 모듈
