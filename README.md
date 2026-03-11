@@ -1,194 +1,161 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=300&section=header&text=Namgung%20Geonwoo&fontSize=70&fontColor=fff&animation=twinkling&fontAlignY=40&desc=AI%20Developer%20and%20Backend%20Engineer&descAlignY=65&descAlign=50)
+# Namgung Geonwoo
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=600&lines=🏆+Award-winning+AI+Developer;🤖+RAG+%26+LLM+Specialist;🚀+Backend+Engineer;💡+Problem+Solver+%26+Innovator;🎯+Building+AI+for+Social+Impact)](https://git.io/typing-svg)
+**Physical AI Engineer**
+
+AI that understands and acts in the physical world.
+
+Seoul, Korea
 
 </div>
 
-```javascript
-const NamgungGeonwoo = {
-    location: "Seoul, Korea 🇰🇷",
-    currentFocus: ["RAG Systems", "Multi-Agent AI", "Backend Development"],
-    achievements: ["🥇 Ministry Award Winner", "🤖 AI Specialist", "👨‍💻 Team Leader"],
-    philosophy: "Building the future with AI • Solving real-world problems • Always learning"
-};
-````
+---
+
+## About
+
+소프트웨어 위의 AI가 아니라, 물리 세계에서 동작하는 AI를 만듭니다.
+
+ROS 2 기반 다중 로봇 Fleet Management System을 설계하고 구현하면서, AI 판단이 실제 로봇의 움직임으로 이어지는 전체 파이프라인을 경험했습니다. RAG/LLM으로 지능을 만들고, 로보틱스로 그 지능에 신체를 부여하는 것 — Physical AI의 양쪽을 모두 다룰 수 있는 엔지니어를 지향합니다.
 
 ---
 
-## 🏆 주요 성과
+## Highlights
+
+| | |
+|---|---|
+| **제7회 k-DigitalTraining Hackathon** 고용노동부장관상 수상 | 7개 프로젝트 완료 (AI/ML 6 + Robotics 1) |
+| F1 Score 11.4% 개선 (환자 이탈 예측) | 155+ 테스트 케이스 작성 (FMS) |
+
+---
+
+## Projects
+
+### Kitchmatics - Smart Kitchen Fleet Management System
+
+> **ROS 2 기반 자율주행 서빙로봇 3대 + 로봇팔 2대 협업 스마트 키친 시스템**
+
+**역할: Project Manager / FMS 설계 및 구현 / GUI 개발**
+
+[Repository](https://github.com/addinedu-roscamp-4th/roscamp-repo-1) · ROS 2 Jazzy, Nav2, Python, PostgreSQL, Domain Bridge, TCP/IP, PyQt
+
+**Fleet Management System (FMS) — 핵심 담당**
+
+주문 접수부터 조리, 품질 검사, 서빙, 복귀까지 전 과정을 자동으로 관제하는 시스템을 설계하고 단독 구현했습니다.
+
+- **Task Scheduler**: 주문 큐 관리, 픽업 슬롯 할당, 우선순위 기반 태스크 스케줄링
+- **Fleet Controller**: 서빙로봇 3대 + 로봇팔 2대 실시간 상태 모니터링, 가용 로봇 자동 배정
+- **Zone Manager**: 다중 로봇 충돌 회피, 구역 예약 시스템, 교착 상태 감지 및 해소
+- **Path Planner**: Navigation Graph 기반 최적 경로 계획
+- **Error Detection & Recovery**: 장애 자동 감지 및 복구 핸들러
+- **Domain Bridge**: ROS_DOMAIN_ID 격리 환경에서 5개 도메인(Main PC, 서빙로봇 3, 로봇팔 2) 간 통신 브릿지 구축
+- **커스텀 메시지 인터페이스**: fleet_interfaces 패키지 설계 (11개 메시지 타입)
+- **테스트**: 단위/통합/E2E 155개 이상의 테스트 케이스 작성
+
+**GUI**
+
+- 운영자용 실시간 모니터링 대시보드 (TCP 기반 FMS 연동)
+- 주문 접수, 로봇 상태 확인, 수동 제어 인터페이스
+
+**Project Management**
+
+- 6인 팀 프로젝트 리드, 시스템 아키텍처 설계, 모듈 간 인터페이스 정의
+- 스프린트 기반 개발 일정 관리
+
+```
+시스템 구성:
+Main PC (Domain 25) ─── FMS Node, Sandwich Coordinator, Domain Bridge, DB
+  ├── Pinky1 (Domain 11) ── 서빙로봇
+  ├── Pinky2 (Domain 12) ── 서빙로봇
+  ├── Pinky3 (Domain 13) ── 서빙로봇
+  ├── Arm A  (Domain 20) ── 샌드위치 제조
+  └── Arm B  (Domain 21) ── 소스 도포
+```
+
+---
+
+### AI & ML
+
+**1. [고향으로 ON](https://github.com/NGGW519/7th-kDT-HACKATHON)** — 고용노동부장관상 수상작
+
+RAG 기반 중장년층 고향 정착 지원 플랫폼. 음성 UI/UX, 지역별 맞춤 정보 제공.
+- 기술: React Native, TypeScript, FastAPI, OpenAI GPT, RAG, ChromaDB, MySQL
+- 역할: 팀장, AI 시스템 설계 및 구현
+
+**2. [CLIKCA](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-FINAL-1TEAM)** — AI 업무 파트너
+
+멀티 에이전트 기반 업무 자동화 시스템. 하이브리드 검색(키워드+벡터), LangGraph 워크플로우 라우팅.
+- 기술: Electron, React, FastAPI, LangGraph, OpenAI, ChromaDB, AWS S3
+- 역할: AI 워크플로우 아키텍처 설계 및 LangGraph 구현
+
+**3. [의학 논문 팩트체킹 챗봇](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-3rd-1TEAM)**
+
+3개 의학 DB(Europe PMC, PubMed, MedRxiv) 통합 RAG 파이프라인. RAGAS 자동 평가 시스템.
+- 기술: GPT-4.1, ChromaDB, RAG, RAGAS, Streamlit
+- 역할: RAG 파이프라인 설계 및 RAGAS 평가 구현
+
+---
+
+### Web Services
+
+**4. [지금, 서울](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-4th-1TEAM)** — AI 시정 Q&A
+
+서울 열린데이터 광장 API 통합, FAQ 자동 응답, 관리자 대시보드. 2일 개발.
+- 기술: Django, LangChain, LangGraph, ChromaDB, MySQL
+
+**5. [DRMC](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-1st-2Team)** — 자동차 리콜 정보 서비스
+
+리콜 정보 시각화, 맞춤 추천, 웹 크롤링 자동화. 2일 개발.
+- 기술: Streamlit, MySQL, Selenium, Python
+
+---
+
+### Data Science
+
+**6. [환자 이탈 예측 모델](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-2nd-7Team)**
+
+클래스 불균형 해결(SMOTE), F1 Score 11.4% 개선. 주요 이탈 인자 식별.
+- 기술: Python, XGBoost, SMOTE, Scikit-learn
+
+---
+
+## Tech Stack
 
 <div align="center">
 
-| 🥇 Award Winner                                                                                                                            | 🚀 Tech Achievements                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
-| **제7회 k-DigitalTraining Hackathon**<br>🏆 고용노동부장관상 수상<br>💡 프로젝트: "고향으로 ON"<br>🎯 임팩트: 중장년층 고향 정착 지원<br>🛠️ 기술: RAG, React Native, FastAPI | 🤖 6개 AI/ML 프로젝트 성공적 완료<br>👥 다수 팀 리더십 경험<br>📊 성능 향상: F1 Score 11.4% 개선<br>⚡ 2일만에 MVP 구현 |
+| AI & ML | Backend | Frontend | Robotics | Database & Infra |
+|---------|---------|----------|----------|-----------------|
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) | ![ROS2](https://img.shields.io/badge/ROS2-22314E?style=flat-square&logo=ros&logoColor=white) | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white) |
+| ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white) | ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white) | ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white) | ![Nav2](https://img.shields.io/badge/Nav2-22314E?style=flat-square&logo=ros&logoColor=white) | ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=flat-square&logo=mysql&logoColor=white) |
+| ![LangChain](https://img.shields.io/badge/LangChain-121212?style=flat-square&logo=chainlink&logoColor=white) | ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) | ![Electron](https://img.shields.io/badge/Electron-2B2E3A?style=flat-square&logo=electron&logoColor=9FEAF9) | ![Python](https://img.shields.io/badge/Domain_Bridge-22314E?style=flat-square&logo=ros&logoColor=white) | ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white) |
+| ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B6B?style=flat-square&logo=database&logoColor=white) | | ![PyQt](https://img.shields.io/badge/PyQt-41CD52?style=flat-square&logo=qt&logoColor=white) | | |
 
 </div>
 
 ---
 
-## 🚀 주요 프로젝트
+## Specialization
 
-### 🤖 AI & ML 프로젝트
-
-#### 1. 🏠 [고향으로 ON](https://github.com/NGGW519/7th-kDT-HACKATHON)
-
-*🥇 제7회 k-DigitalTraining Hackathon 고용노동부장관상 수상작*
-
-* 기술: React Native, TypeScript, FastAPI, OpenAI GPT, RAG, ChromaDB, MySQL
-* 성과:
-
-  * 전국 해커톤 대회에서 **고용노동부장관상 수상**
-  * 음성 기반 UI/UX 구현
-  * RAG 기반 지역별 맞춤형 정보 제공
-  * 게이미피케이션 요소로 지역사회 적응 동기 부여
-* 역할: 팀장, AI 시스템 설계 및 구현
-
-#### 2. 💼 [CLIKCA - AI 업무 파트너](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-FINAL-1TEAM)
-
-* 기술: Electron, React, FastAPI, LangGraph, OpenAI text-embedding-3-large, ChromaDB, AWS S3
-* 성과:
-
-  * 멀티 에이전트 시스템 기반 업무 자동화
-  * 하이브리드 검색(키워드+벡터) 적용
-  * LangGraph 기반 지능형 워크플로우 라우팅
-* 역할: AI 워크플로우 아키텍처 설계 및 LangGraph 구현
-
-#### 3. 🏥 [의학 논문 기반 팩트체킹 챗봇](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-3rd-1TEAM)
-
-* 기술: GPT-4.1, ChromaDB, RAG, RAGAS, Streamlit
-* 성과:
-
-  * 3개 의학 DB 통합 (Europe PMC, PubMed, MedRxiv)
-  * RAGAS 자동 평가 시스템 구축
-  * 최신 연구와 상식 차이점 분석
-* 역할: RAG 파이프라인 설계 및 RAGAS 평가 구현
+| Physical AI & Robotics | AI Development | Backend Development | Leadership |
+|---|---|---|---|
+| Multi-Robot Fleet Management | RAG Systems | FastAPI / Django | Project Management |
+| Task Scheduling & Collision Avoidance | Multi-Agent AI (LangGraph) | Database Design | System Architecture |
+| ROS 2 / Nav2 / Domain Bridge | LLM Integration | API Design | Sprint Planning |
 
 ---
 
-### 🌐 웹 서비스 프로젝트
-
-#### 4. 🏙️ [지금, 서울 - AI 시정 Q\&A](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-4th-1TEAM)
-
-* 기술: Django, LangChain, LangGraph, ChromaDB, MySQL, Seoul Open Data API
-* 성과:
-
-  * 서울 열린데이터 광장 API 다중 통합
-  * FAQ 자동 응답, 관리자 대시보드 구현
-  * 반응형 웹 디자인
-* 개발 기간: 2일 (2025.07.21-22)
-
-#### 5. 🚗 [DRMC - 자동차 리콜 정보 서비스](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-1st-2Team)
-
-* 기술: Streamlit, MySQL, Selenium, Python, Pandas
-* 성과:
-
-  * 자동차 리콜 정보 시각화
-  * 사용자 맞춤 추천 시스템
-  * 웹 크롤링 자동화
-* 개발 기간: 2일 (2025.04.09-10)
-
----
-
-### 📊 데이터 사이언스 프로젝트
-
-#### 6. 🏥 [환자 이탈 예측 모델](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN13-2nd-7Team)
-
-* 기술: Python, XGBoost, SMOTE, Scikit-learn, Pandas, NumPy
-* 성과:
-
-  * 클래스 불균형 해결 (SMOTE 적용)
-  * 주요 인자 식별: 성별, 연령, 정신건강, 약물남용
-* 팀명: "도망가지마!!!!"
-
----
-
-## 🛠️ Tech Arsenal
-
-*"Building the future, one line of code at a time"*
+## GitHub Stats
 
 <div align="center">
 
-| 🤖 AI & ML                                                                                                                                                                                                                                                                                                                                                                                                                                              | 💻 Backend                                                                                                                                                                                                            | 🎨 Frontend                                                                                                                                                                                                                                                                                                                                    | 🗄️ Database & Cloud                                                                                                                                                                                          |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)<br>![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge\&logo=openai\&logoColor=white)<br>![LangChain](https://img.shields.io/badge/LangChain-121212?style=for-the-badge\&logo=chainlink\&logoColor=white)<br>![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B6B?style=for-the-badge\&logo=database\&logoColor=white) | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge\&logo=fastapi\&logoColor=white)<br>![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge\&logo=django\&logoColor=white) | ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)<br>![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge\&logo=typescript\&logoColor=white)<br>![Electron](https://img.shields.io/badge/Electron-2B2E3A?style=for-the-badge\&logo=electron\&logoColor=9FEAF9) | ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge\&logo=mysql\&logoColor=white)<br>![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge\&logo=amazon-aws\&logoColor=white) |
+| ![stats](https://github-readme-stats.vercel.app/api?username=NGGW519&show_icons=true&theme=default&hide_border=true) | ![langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NGGW519&layout=compact&theme=default&hide_border=true) |
+|---|---|
 
 </div>
 
 ---
 
-### 🎯 Specialized Skills
+## Contact
 
-<div align="center">
-
-| 🤖 AI Development                                          | 💻 Backend Development                                          | 🔬 Data Science                                                          | 👥 Leadership                                                        |
-| ---------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------- |
-| • RAG Systems <br> • Multi-Agent AI <br> • LLM Integration | • FastAPI/Django <br> • Database Design <br> • API Architecture | • ML Modeling <br> • Performance Optimization <br> • Feature Engineering | • Team Management <br> • Project Planning <br> • Technical Mentoring |
-
-</div>
-
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-| ![NGGW519's GitHub stats](https://github-readme-stats.vercel.app/api?username=NGGW519\&show_icons=true\&theme=radical\&hide_border=true\&bg_color=0D1117) | ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NGGW519\&layout=compact\&theme=radical\&hide_border=true\&bg_color=0D1117) |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-
-| ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=NGGW519\&theme=radical\&hide_border=true\&background=0D1117) | ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=NGGW519\&theme=react-dark\&hide_border=true\&bg_color=0D1117\&color=79fe96\&line=00d4aa\&point=ffffff) |
-| ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-</div>
-
----
-
-## 🎯 전문 분야
-
-* 🤖 **RAG & LLM**: 검색 증강 생성 및 대화형 AI 시스템 구축
-* 🏗️ **AI 워크플로우**: LangGraph를 활용한 멀티 에이전트 시스템
-* 💻 **백엔드 개발**: FastAPI, Django 기반 API 설계 및 구현
-* 📊 **데이터 사이언스**: 머신러닝 모델링 및 성능 최적화
-
----
-
-## 🔭 현재 관심사
-
-* 🧠 대화형 AI와 RAG 시스템 고도화
-* 🎨 멀티모달 AI (텍스트, 이미지, 음성 통합)
-* 🎮 게이미피케이션 기반 사용자 경험 설계
-* 🗣️ 음성 인터페이스 및 접근성 향상
-* 🌐 실시간 데이터 처리 및 API 통합
-
----
-
-## 📫 Let's Connect!
-
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/NGGW519)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:srrd1357@gmail.com)
-
-</div>
-
----
-
-### 🎮 When I'm Not Coding
-
-<div align="center">
-
-| 🤖 Building AI                          | 📚 Learning                          | 🌱 Growing                    |
-| --------------------------------------- | ------------------------------------ | ----------------------------- |
-| *Experimenting with new RAG techniques* | *Always exploring cutting-edge tech* | *Mentoring junior developers* |
-
-</div>
-
----
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=100&section=footer"/>
-
-**⭐️ "Building tomorrow's solutions, today!"**
-
-*Thanks for visiting! Don't forget to ⭐ my repositories if you find them interesting!*
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](https://github.com/NGGW519)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:srrd1357@gmail.com)
