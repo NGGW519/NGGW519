@@ -33,37 +33,11 @@ ROS 2 기반 다중 로봇 Fleet Management System을 설계하고 구현하면�
 
 ### Kitchmatics - Smart Kitchen Fleet Management System
 
-> **ROS 2 기반 자율주행 서빙로봇 3대 + 로봇팔 2대 협업 스마트 키친 시스템**
-
-**역할: Project Manager / FMS 설계 및 구현 / GUI 개발**
+> ROS 2 기반 자율주행 서빙로봇 3대 + 로봇팔 2대 협업 스마트 키친 시스템
 
 [Repository](https://github.com/addinedu-roscamp-4th/roscamp-repo-1) · ROS 2 Jazzy, Nav2, Python, PostgreSQL, Domain Bridge, TCP/IP, PyQt
 
-**Fleet Management System (FMS) — 핵심 담당**
-
-주문 접수부터 조리, 품질 검사, 서빙, 복귀까지 전 과정을 자동으로 관제하는 시스템을 설계하고 단독 구현했습니다.
-
-- **Task Scheduler**: 주문 큐 관리, 픽업 슬롯 할당, 우선순위 기반 태스크 스케줄링
-- **Fleet Controller**: 서빙로봇 3대 + 로봇팔 2대 실시간 상태 모니터링, 가용 로봇 자동 배정
-- **Zone Manager**: 다중 로봇 충돌 회피, 구역 예약 시스템, 교착 상태 감지 및 해소
-- **Path Planner**: Navigation Graph 기반 최적 경로 계획
-- **Error Detection & Recovery**: 장애 자동 감지 및 복구 핸들러
-- **Domain Bridge**: ROS_DOMAIN_ID 격리 환경에서 5개 도메인(Main PC, 서빙로봇 3, 로봇팔 2) 간 통신 브릿지 구축
-- **커스텀 메시지 인터페이스**: fleet_interfaces 패키지 설계 (11개 메시지 타입)
-- **테스트**: 단위/통합/E2E 155개 이상의 테스트 케이스 작성
-
-**GUI**
-
-- 운영자용 실시간 모니터링 대시보드 (TCP 기반 FMS 연동)
-- 주문 접수, 로봇 상태 확인, 수동 제어 인터페이스
-
-**Project Management**
-
-- 6인 팀 프로젝트 리드, 시스템 아키텍처 설계, 모듈 간 인터페이스 정의
-- 스프린트 기반 개발 일정 관리
-
 ```
-시스템 구성:
 Main PC (Domain 25) ─── FMS Node, Sandwich Coordinator, Domain Bridge, DB
   ├── Pinky1 (Domain 11) ── 서빙로봇
   ├── Pinky2 (Domain 12) ── 서빙로봇
@@ -71,6 +45,29 @@ Main PC (Domain 25) ─── FMS Node, Sandwich Coordinator, Domain Bridge, DB
   ├── Arm A  (Domain 20) ── 샌드위치 제조
   └── Arm B  (Domain 21) ── 소스 도포
 ```
+
+#### My Role
+
+| 구분 | 내용 |
+|---|---|
+| **Project Manager** | 6인 팀 리드, 시스템 아키텍처 설계, 모듈 간 인터페이스 정의, 스프린트 운영 |
+| **FMS 설계 및 구현** | 주문~서빙~복귀 전 과정을 관제하는 Fleet Management System 단독 설계/구현 |
+| **GUI 개발** | 운영자용 실시간 모니터링 대시보드, 주문 접수 및 수동 제어 인터페이스 (TCP 기반) |
+
+#### FMS 상세 모듈
+
+주문 접수부터 조리, 품질 검사, 서빙, 복귀까지 전 과정을 자동으로 관제하는 시스템을 단독 설계/구현했습니다.
+
+| 모듈 | 기능 |
+|---|---|
+| **Task Scheduler** | 주문 큐 관리, 픽업 슬롯 할당, 우선순위 기반 태스크 스케줄링 |
+| **Fleet Controller** | 서빙로봇 3대 + 로봇팔 2대 실시간 상태 모니터링, 가용 로봇 자동 배정 |
+| **Zone Manager** | 다중 로봇 충돌 회피, 구역 예약 시스템, 교착 상태 감지 및 해소 |
+| **Path Planner** | Navigation Graph 기반 최적 경로 계획 |
+| **Error Detection & Recovery** | 장애 자동 감지 및 복구 핸들러 |
+| **Domain Bridge** | ROS_DOMAIN_ID 격리 환경에서 5개 도메인 간 통신 브릿지 구축 |
+| **fleet_interfaces** | 커스텀 ROS 2 메시지 패키지 설계 (11개 메시지 타입) |
+| **Testing** | 단위/통합/E2E 155개 이상의 테스트 케이스 |
 
 ---
 
