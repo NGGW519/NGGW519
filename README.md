@@ -16,7 +16,7 @@ Seoul, Korea
 
 소프트웨어 위의 AI가 아니라, 물리 세계에서 동작하는 AI를 만듭니다.
 
-지금은 도로 작업 구간의 **로봇신호수**가 차량 리프트에 스스로 올라타는 도킹을 **강화학습 정책 하나**로 만들고 있습니다. GPU 시뮬레이션에서 학습하고, 실물 로봇은 확인 시험만 하는 sim-to-real 파이프라인 전체를 다룹니다. 시뮬레이터, 센서 융합, 학습, 온보드 배포, 안전 규칙까지 포함합니다. 같은 로봇의 3D LiDAR 가드레일·장애물 인지, 객체 탐지 모델, 무선충전 제어도 맡고 있습니다.
+지금은 도로 작업 구간의 **로봇신호수**가 차량 리프트에 스스로 올라타는 도킹을 **강화학습 정책 하나**로 만들고 있습니다. GPU 시뮬레이션에서 학습하고, 실물 로봇은 확인 시험만 하는 sim-to-real 파이프라인 전체를 다룹니다. 시뮬레이터, 센서 융합, 학습, 온보드 배포, 안전 규칙까지 포함합니다. 같은 로봇의 3D LiDAR 가드레일·장애물 인지와 객체 탐지 모델도 맡고 있습니다.
 
 그 전에는 ROS 2 기반 다중 로봇 Fleet Management System(서빙로봇 3대 + 로봇팔 2대)을 단독 설계·구현했고, RAG/LLM 기반 AI 시스템으로 고용노동부장관상을 받았습니다.
 
@@ -75,13 +75,7 @@ contracts/ (형상·센서·관측·안전 수치의 단일 정본)
 - 현장 데이터를 섞은 데이터셋 구성, 중단 규칙·배포 임계값을 설정 파일로 관리, Orin NX 실측 속도로 탑재 모델 선정(Nano)
 - 로봇 카메라 노드 연동과 역광·태그 실험
 
-## 4. 로봇 무선충전 제어 *(private)*
-
-> 로봇이 리프트 위 충전존에 안착하면 바로 충전을 시작하고, 완충 기준에 맞춰 멈추고 다시 확인하는 ROS 2 노드
-
-- ROS 2, C++, 시리얼 통신(수전제어기), 2.5 kW 무선충전기
-
-## 5. [Kitchmatics](https://github.com/addinedu-roscamp-4th/roscamp-repo-1) — 다중 로봇 Fleet Management System
+## 4. [Kitchmatics](https://github.com/addinedu-roscamp-4th/roscamp-repo-1) — 다중 로봇 Fleet Management System
 
 > ROS 2 기반 자율주행 서빙로봇 3대 + 로봇팔 2대 협업 스마트 키친 시스템
 
@@ -102,10 +96,6 @@ Main PC (Domain 25) ─── FMS Node, Sandwich Coordinator, Domain Bridge, DB
 | **FMS 설계 및 구현** | 주문-서빙-복귀 전 과정을 관제하는 Fleet Management System 단독 설계·구현 |
 | **FMS 모듈** | Task Scheduler, Fleet Controller, Zone Manager(충돌 회피·교착 해소), Path Planner, Error Recovery, 5개 도메인 Domain Bridge, 커스텀 메시지 11종, 테스트 155개 이상 |
 | **GUI 개발** | 운영자용 실시간 모니터링 대시보드, 주문 접수 및 수동 제어 인터페이스 (TCP 기반) |
-
-## 6. Omniverse · OpenUSD
-
-- [kit-app-template](https://github.com/NGGW519/kit-app-template), [LearnOpenUSD](https://github.com/NGGW519/LearnOpenUSD): NVIDIA Omniverse Kit 앱과 OpenUSD 장면 구성 학습. Isaac Sim 3D 재생 영상 제작에 활용
 
 ---
 
@@ -132,7 +122,7 @@ Main PC (Domain 25) ─── FMS Node, Sandwich Coordinator, Domain Bridge, DB
 | ![Isaac Sim](https://img.shields.io/badge/Isaac_Sim-76B900?style=flat-square&logo=nvidia&logoColor=white) | ![Nav2](https://img.shields.io/badge/Nav2-22314E?style=flat-square&logo=ros&logoColor=white) | ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white) | ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white) |
 | ![Gazebo](https://img.shields.io/badge/Gazebo-F58113?style=flat-square&logo=ros&logoColor=white) | ![Jetson](https://img.shields.io/badge/Jetson_Orin-76B900?style=flat-square&logo=nvidia&logoColor=white) | ![LangChain](https://img.shields.io/badge/LangChain-121212?style=flat-square&logo=chainlink&logoColor=white) | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white) |
 | ![ONNX](https://img.shields.io/badge/ONNX_Runtime-005CED?style=flat-square&logo=onnx&logoColor=white) | ![LiDAR](https://img.shields.io/badge/3D_LiDAR-22314E?style=flat-square&logo=ros&logoColor=white) | ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B6B?style=flat-square&logo=database&logoColor=white) | ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=flat-square&logo=mysql&logoColor=white) |
-| ![OpenUSD](https://img.shields.io/badge/OpenUSD-76B900?style=flat-square&logo=nvidia&logoColor=white) | ![AprilTag](https://img.shields.io/badge/AprilTag_·_RealSense-22314E?style=flat-square&logo=intel&logoColor=white) | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) | ![AWS](https://img.shields.io/badge/AWS_EC2-232F3E?style=flat-square&logo=amazon-aws&logoColor=white) |
+| | ![AprilTag](https://img.shields.io/badge/AprilTag_·_RealSense-22314E?style=flat-square&logo=intel&logoColor=white) | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) | ![AWS](https://img.shields.io/badge/AWS_EC2-232F3E?style=flat-square&logo=amazon-aws&logoColor=white) |
 
 </div>
 
